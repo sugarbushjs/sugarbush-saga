@@ -1,7 +1,7 @@
 {
   "name": "sugarbush-saga",
   "author": "Steven Wickers <StevenWickers@gmail.com> (https://www.linkedin.com/in/stevenwickers)",
-  "version": "1.5.5",
+  "version": "1.6.0",
   "description": "Sugarbush is a performance enhancer for your react-redux application by replacing the Redux combinedReducers.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -54,7 +54,8 @@
     "react-dom": "^16.8 || ^17.0 || ^18.0",
     "react-native": ">=0.59",
     "redux": "^4",
-    "redux-saga": "1.2.2"
+    "redux-saga": "1.2.2",
+    "sugarbush": "^1.7.1"
   },
   "peerDependenciesMeta": {
     "@types/react": {
