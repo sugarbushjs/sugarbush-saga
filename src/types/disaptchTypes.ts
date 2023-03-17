@@ -1,10 +1,9 @@
 import { Dispatch } from 'redux'
-
 /**
  * @template dispatch of type redux Dispatch
  * @description An interface for useAdaptiveDispatch
  */
-export interface IAdpSagaDispatchOptions<D extends Dispatch, V extends boolean> {
+export interface IAdpSagaDispatchOptions<D extends Dispatch, K extends string> {
   dispatch: D
-  verbose?: V
+  key: K
 }

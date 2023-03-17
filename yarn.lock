@@ -5927,18 +5927,10 @@ stylehacks@^5.1.1:
     browserslist "^4.21.4"
     postcss-selector-parser "^6.0.4"
 
-sugarbush@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/sugarbush/-/sugarbush-1.7.1.tgz#1a5b01e3b450bea34f2bb67e1449d30a0f97376a"
-  integrity sha512-cGkzwWWZI4lP/hJkv+bvbhfKK8jWYvBj/YpfSNefF1fYLdrB2nfZKlfsfn+Kqq1Mc4HY15Qdu5QDH2PRsDC2oQ==
-  dependencies:
-    "@babel/runtime" "^7.21.0"
-    "@jest/globals" "^29.5.0"
-    jest "^29.5.0"
-    jest-environment-jsdom "^29.5.0"
-    rollup-plugin-babel "^4.4.0"
-    rollup-plugin-peer-deps-external "^2.2.4"
-    rollup-plugin-typescript2 "^0.34.1"
+sugarbush@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/sugarbush/-/sugarbush-2.0.0.tgz#3d93f389d73566fa0b6d156e972532a248003e99"
+  integrity sha512-Wg7LjTIv3zC1mOaCV9uFzSYn7O49rToeosPJqVLuZZfkHXuOq+AHAJJrmwjJjzs95XAo649Wye4AaDFroQFVsQ==
 
 supports-color@^5.3.0:
   version "5.5.0"

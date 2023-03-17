@@ -13,6 +13,17 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
 function __generator(thisArg, body) {
     var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
     return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
@@ -107,5 +118,20 @@ function sbPut(key) {
     };
 }
 
-export { sbPut };
+// @ts-ignore
+var emoji = String.fromCodePoint('0X1F6A1');
+function adaptiveSagaDispatch(options) {
+    var _a = options || {}, _dispatch = _a.dispatch, _key = _a.key;
+    return function _fis(action) {
+        try {
+            var _action = __assign(__assign({}, action), { key: _key });
+            _dispatch(_action);
+        }
+        catch (e) {
+            console.error("".concat(emoji, " error in AdaptiveDispatch: ").concat(e));
+        }
+    };
+}
+
+export { adaptiveSagaDispatch, sbPut };
 //# sourceMappingURL=index.js.map

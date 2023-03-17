@@ -54,8 +54,8 @@
     "react-dom": "^16.8 || ^17.0 || ^18.0",
     "react-native": ">=0.59",
     "redux": "^4",
-    "redux-saga": "1.2.2",
-    "sugarbush": "^1.7.1"
+    "redux-saga": "^1.2.3",
+    "sugarbush": "^2.0.0"
   },
   "peerDependenciesMeta": {
     "@types/react": {
@@ -119,17 +119,14 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "ts-jest": "^29.0.5",
     "ts-loader": "^9.4.2",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "@redux-saga/core": "^1.2.2",
+    "redux-saga": "^1.2.2",
+    "sugarbush": "^2.0.0"
   },
   "files": [
     "dist",
     "LICENSE",
     "README.md"
-  ],
-  "directories": {},
-  "dependencies": {
-    "@redux-saga/core": "^1.2.2",
-    "redux-saga": "^1.2.2",
-    "sugarbush": "^1.7.1"
-  }
+  ]
 }
