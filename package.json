@@ -1,7 +1,7 @@
 {
   "name": "sugarbush-saga",
   "author": "Steven Wickers <StevenWickers@gmail.com> (https://www.linkedin.com/in/stevenwickers)",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Sugarbush is a performance enhancer for your react-redux application by replacing the Redux combinedReducers.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -17,6 +17,9 @@
   },
   "keywords": [
     "redux",
+    "react",
+    "redux-toolkit",
+    "toolkit",
     "reducer",
     "state",
     "predictable",
@@ -26,7 +29,6 @@
     "live",
     "replay",
     "flux",
-    "react",
     "reactjs",
     "elm",
     "combinedReducers",
@@ -38,12 +40,17 @@
     "store",
     "configurestore",
     "sb",
-    "sugarbush"
+    "sugarbush",
+    "saga",
+    "starter",
+    "slice",
+    "immer",
+    "immutable"
   ],
   "homepage": "https://github.com/sugarbushjs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sugarbushjs/sugarbush.git"
+    "url": "git+https://github.com/sugarbushjs/sugarbush-saga.git"
   },
   "license": "MIT",
   "peerDependencies": {
