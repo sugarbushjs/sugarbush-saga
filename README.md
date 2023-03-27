@@ -9,7 +9,7 @@ the dispatched action type. Please read more about npm [sugarbush](https://www.n
 
 \
 **Sugarbush-Saga** includes saga helper that works with the Sugarbush switchback,
-`confingureAdaptiveStrore`, `adaptiveSagaDispatch`, and `sbPut` (saga effect)
+`confingureAdaptiveStrore`, and `sbPut` (saga effect)
 
 
 ## Installation
@@ -27,7 +27,7 @@ yarn add sugarbush-saga
 
 ## Saga
 
-When dispatching Saga actions, the combinedReducers will process all the reducers. With `dispatchSaga` from `configureAdaptiveStore`
+When dispatching Saga actions, the combinedReducers will process all the reducers. With `dispatch` from `configureAdaptiveStore`
 or `adaptiveSagaDispatch` this will not occur. Both functions take two parameters. The first parameter, dispatch, of 
 type Redux Dispatch, the second parameter, key, of type string. The key assigned to either method must be unique 
 and is used to bypass Sugarbush's switchback. This unique key must also be assigned to Sugarbush's switchback.
@@ -36,9 +36,9 @@ and is used to bypass Sugarbush's switchback. This unique key must also be assig
 ```js
 import { adpStore } from '../components/App'
 
-export const sagaDispatch = () => adpStore.dispatchSaga('@@GAGA-BYPASS!')
+export const sagaDispatch = () => adpStore.dispatch('@@GAGA-BYPASS!')
 ```
-> **Note**: The dispatchSaga is a method of the Sugarbush `configureAdaptiveStore`. To set up a configureAdaptiveStore
+> **Note**: The dispatch is a method of the Sugarbush `configureAdaptiveStore`. To set up a configureAdaptiveStore
 > please read about [sugarbush](https://www.npmjs.com/package/sugarbush)
 
 ### adaptiveSagaDispatch
